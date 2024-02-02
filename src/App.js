@@ -14,7 +14,7 @@ const App = () => {
       image: 'willywonka.jpg',
       synopsis: 'A poor boy seeks one of the five coveted golden tickets that will send him on a tour of Willy Wonkas mysterious chocolate factory.',
     },
-    // Add more movies as needed
+    
   ];
 
   return (
