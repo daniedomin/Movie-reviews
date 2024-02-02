@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import MovieList from './components/MovieList';
 
-function App() {
+const App = () => {
+  const sampleMovies = [
+    {
+      title: 'Happy Gilmore',
+      image: 'happygilmore.jpg',
+      synopsis: 'An aspiring professional hocky player finds his calling in professional golf.',
+    },
+    {
+      title: 'Willy Wonka and the Chocolate Factory',
+      image: 'willywonka.jpg',
+      synopsis: 'A poor boy seeks one of the five coveted golden tickets that will send him on a tour of Willy Wonkas mysterious chocolate factory.',
+    },
+    // Add more movies as needed
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Movie Reviews</h1>
+      <MovieList movies={sampleMovies} />
     </div>
   );
-}
+};
 
 export default App;
+
